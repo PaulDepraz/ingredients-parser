@@ -9,7 +9,7 @@ Ingredient Match Tool
     `pip install fuzzywuzzy`
 
 ####To run:
-From graphs/
+  From graphs/py
 * Creating graph:
     `python generate.py`
 * Test:
