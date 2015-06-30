@@ -6,21 +6,21 @@ from itertools import tee
 import re
 
 # Ingredients Graph
-ig = load_graph('../ingredients.xml.gz')
+ig = load_graph('ingredients.xml.gz')
 
 v_name = ig.vertex_properties['name']
 v_is_basis = ig.vertex_properties['is_basis']
 
 plural = {u'eis':u'l',
           u'les':u'l',
-          #'is':'l', 
-          u'res':u'r', 
-          u'ns':u'm', 
-          u'ães':u'ão', 
+          #'is':'l',
+          u'res':u'r',
+          u'ns':u'm',
+          u'ães':u'ão',
           u'ões':u'ão',
           u'aes':u'ão',
-          u'oes':u'ão', 
-          u'zes':u'z', 
+          u'oes':u'ão',
+          u'zes':u'z',
           u'éis':u'el'
           }
 
@@ -154,4 +154,4 @@ print '---------'
 ings = find_ingredients([u'azetes', u'olivia', u'estra', u'virgens'])
 for i in ings:
     print i
-    
+
